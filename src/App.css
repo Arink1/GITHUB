@@ -1,0 +1,167 @@
+.navbar-nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+}
+
+.nav-item {
+  /* If you need specific styling for nav items, add them here. For example: */
+  margin: 0 10px; /* Adds some horizontal spacing between items */
+}
+
+@media (max-width: 768px) {
+  .navbar-nav {
+    flex-direction: column;
+  }
+  .nav-item {
+    margin: 5px 0;
+  }
+}
+
+
+/* General styling */
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+.App {
+  display: flex;
+  flex-direction: column; /* Ensures content is vertically stacked */
+  min-height: 100vh;
+}
+
+/* Header styles */
+.App-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 10%;
+  color: white;
+}
+
+.header {
+  position: fixed; /* Or 'absolute' if you don't want it to stick at the top on scroll */
+  top: 0;
+  width: 100%;
+  z-index: 1000; /* High z-index to ensure it's above other content */
+  background-color: #fff; /* Assuming you want a solid background */
+}
+
+header {
+  color: black;
+  padding: 1rem;
+}
+
+/* Default mobile view */
+.logo {
+  max-height: 40px; /* Example size for mobile views */
+}
+
+/* Desktop and larger tablets */
+@media (min-width: 768px) { /* Adjust this breakpoint as needed */
+  .logo {
+    max-height: 80px; /* Larger size for desktop views */
+  }
+}
+
+
+/* Navigation link styles */
+.Nav-link {
+  margin-right: 15px; /* Specific margin might still be useful */
+}
+
+
+
+
+/* Footer styles */
+.App-footer {
+  background-color: #6c757d; /* Dark grey */
+  color: white;
+  padding: 20px 10%;
+  text-align: center;
+}
+
+
+
+/* Menu styling */
+.Menu {
+  background-color: #343a40; /* Example color */
+  color: white;
+  padding: 0.5rem;
+}
+
+
+
+footer {
+  background-color: #6c757d; /* Example color */
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+
+
+
+
+/* Styles specific to MainContent */
+main {
+  padding: 2px;
+  text-align: center;
+  background-color: #f0f0f0;
+  margin: 0 0px; /* Removes top and bottom margin */
+}
+
+
+main h1, main p {
+  /* Keep these if you need specific styling for text inside <main> */
+  margin-bottom: 15px; /* Space below the heading */
+  color: #333; /* Dark grey color for the heading */
+  line-height: 1.6; /* Spacing between lines for readability */
+}
+
+.video-container {
+  width: 100%; /* Ensures it takes the full width of its parent */
+  display: flex;
+  justify-content: center; /* Center video horizontally */
+  align-items: center; /* Center video vertically, if needed */
+}
+
+.video-container iframe {
+  width: 100%;
+  height: auto; /* Adjust height as needed, or use a specific aspect ratio */
+}
+
+/* Header.js / Headerlinks.js dropdown menu which appears halfway downscreen exposing submenus.*/
+
+/* Show dropdown on hover */
+
+
+/* Assuming this CSS is defined in your project */
+.categories-container {
+  text-align: center;
+  padding-top: 20px; /* Adjust based on your design */
+}
+
+.category-link {
+  margin: 10px 0; /* Spacing between category links */
+  display: block; /* Ensure links are block-level for margin to take effect */
+}
+
+.header-container .categories-container {
+  text-align: center;
+  padding-top: 200px; 
+}
+
+.header-container .category-link {
+  margin: 10px 0;
+  display: block;
+}
+
+
